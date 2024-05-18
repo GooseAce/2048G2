@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Строки -->
 <resources>
     <string name="app_name">2048</string>
-    <string name="logo_text">Hello player!</string>
+    <string name="but">Play!</string>
 </resources>

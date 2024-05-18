@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Цвета -->
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="st_bar">#f0b94a</color>
+    <color name="text_h">#967111</color>
+    <color name="row">#cfa948</color>
 </resources>

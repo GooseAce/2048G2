@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Стили -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme._2048G2" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme._2048G2" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/st_bar</item>
     </style>
-
     <style name="Theme._2048G2" parent="Base.Theme._2048G2" />
 </resources>
