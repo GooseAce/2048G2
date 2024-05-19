@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Строки -->
+<?xml version="1.0" encoding="utf-8"?><!-- Строки -->
 <resources>
     <string name="app_name">2048</string>
-    <string name="but">Play!</string>
+    <string name="button_play">Play!</string>
+    <string name="button_exit">Exit!</string>
+    <string name="frg_lose">You Lose:(</string>
+    <string name="frg_win">You Win:)</string>
+    <string name="go_menu">Go menu!</string>
 </resources>
