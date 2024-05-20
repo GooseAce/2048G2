@@ -6,273 +6,272 @@
     android:layout_height="match_parent"
     android:background="@color/st_bar">
 
-    <TextView
-        android:id="@+id/textView0_0"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TableLayout
+        android:layout_width="400sp"
+        android:layout_height="400sp"
+        android:layout_marginTop="232sp"
+        android:layout_marginBottom="148sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_go_menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView0_1"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toEndOf="@+id/textView0_0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        <TableRow
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:padding="5sp">
 
-    <TextView
-        android:id="@+id/textView0_2"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toEndOf="@+id/textView0_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+            <TextView
+                android:id="@+id/textView0_0"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView0_3"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView0_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
-    <TextView
-        android:id="@+id/textView1_0"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+            <TextView
+                android:id="@+id/textView0_1"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView1_1"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toEndOf="@+id/textView1_0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
+            <TextView
+                android:id="@+id/textView0_2"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView1_2"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toEndOf="@+id/textView1_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
-    <TextView
-        android:id="@+id/textView1_3"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView1_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+            <TextView
+                android:id="@+id/textView0_3"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView2_0"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        <TableRow
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:padding="5sp">
 
+            <TextView
+                android:id="@+id/textView1_0"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView2_1"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toEndOf="@+id/textView2_0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
-    <TextView
-        android:id="@+id/textView2_2"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toEndOf="@+id/textView2_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+            <TextView
+                android:id="@+id/textView1_1"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView2_3"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
-    <TextView
-        android:id="@+id/textView3_0"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+            <TextView
+                android:id="@+id/textView1_2"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
 
-    <TextView
-        android:id="@+id/textView3_1"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toEndOf="@+id/textView3_0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
 
-    <TextView
-        android:id="@+id/textView3_2"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toEndOf="@+id/textView3_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+            <TextView
+                android:id="@+id/textView1_3"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView3_3"
-        android:layout_width="77.0625sp"
-        android:layout_height="77.0625sp"
-        android:gravity="center"
-        android:background="@color/text_h"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        <TableRow
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView2_0"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:background="@color/text_h"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView2_1"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView2_2"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView2_3"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView3_0"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView3_1"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView3_2"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:background="@color/st_bar" />
+
+            <TextView
+                android:id="@+id/textView3_3"
+                android:background="@color/text_h"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TableRow>
+    </TableLayout>
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="409dp"
-        android:layout_height="249dp"
+        android:layout_width="411dp"
+        android:layout_height="171dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118">
+        app:layout_constraintVertical_bias="0.0">
+
     </FrameLayout>
 
     <Button
