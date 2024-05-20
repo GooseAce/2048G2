@@ -3,6 +3,7 @@ package com.example.a2048g2;
 
 import android.content.Intent;
 import android.gesture.Gesture;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -22,7 +23,22 @@ import java.util.Random;
 
 public class Play extends AppCompatActivity implements GestureDetector.OnGestureListener {
     protected GestureDetectorCompat gd;
+    protected MediaPlayer swipe_player;
+    protected MediaPlayer win_player;
+    protected MediaPlayer lose_player;
     protected Button button_go_menu;
+    // Метод для воиспроизведения звука свайпов
+    protected void swipe_playback(){
+        swipe_player.start();
+    }
+    // Метод для воиспроизведения звука победы
+    protected void win_playback(){
+        win_player.start();
+    }
+    // Метод для воиспроизведения звука поражения
+    protected void lose_playback(){
+        lose_player.start();
+    }
     // Таблица
     protected void setLoseFragment(){
         Lose lose = new Lose();
@@ -229,13 +245,15 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.play);
-
         table = new int[4][4];
         random_location();
         random_location();
         populateTable(table);
         gd = new GestureDetectorCompat(this, this);
         button_go_menu = findViewById(R.id.button_go_menu);
+        swipe_player = MediaPlayer.create(this, R.raw.swipe);
+        win_player = MediaPlayer.create(this, R.raw.win);
+        lose_player = MediaPlayer.create(this, R.raw.lose);
         button_go_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -295,8 +313,15 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         }
         random_location();
         populateTable(this.table);
-        if(hasWin2048()) setWinFragment();
-        if(hasLost2048()) setLoseFragment();
+        swipe_playback();
+        if(hasWin2048()){
+            setWinFragment();
+            win_playback();
+        }
+        if(hasLost2048()){
+            setLoseFragment();
+            lose_playback();
+        }
         return true;
     }
 }
