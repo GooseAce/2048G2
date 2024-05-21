@@ -263,15 +263,14 @@
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="409dp"
-        android:layout_height="189dp"
+        android:layout_width="412dp"
+        android:layout_height="164dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022">
-    </FrameLayout>
+        app:layout_constraintVertical_bias="0.0"></FrameLayout>
 
     <Button
         android:id="@+id/button_go_menu"

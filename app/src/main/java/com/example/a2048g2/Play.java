@@ -2,7 +2,6 @@ package com.example.a2048g2;
 
 
 import android.content.Intent;
-import android.gesture.Gesture;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -22,6 +21,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Play extends AppCompatActivity implements GestureDetector.OnGestureListener {
+    // Таблица
+    protected int[][] table;
     protected GestureDetectorCompat gd;
     protected MediaPlayer swipe_player;
     protected MediaPlayer win_player;
@@ -39,7 +40,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
     protected void lose_playback(){
         lose_player.start();
     }
-    // Таблица
+
     protected void setLoseFragment(){
         Lose lose = new Lose();
         FragmentTransaction ftl = getSupportFragmentManager().beginTransaction();
@@ -52,7 +53,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         ftw.replace(R.id.frame_layout, win);
         ftw.commit();
     }
-    protected int[][] table;
+
     // Проверка таблицы на наличие пустых ячеек
     protected boolean hasEmptyCells() {
         for(int i = 0; i < this.table.length; i++) {
