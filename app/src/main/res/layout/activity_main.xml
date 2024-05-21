@@ -4,24 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/st_bar">
-
-    <TextView
-        android:id="@+id/text_title"
-        android:layout_width="314sp"
-        android:layout_height="172sp"
-        android:fontFamily="@font/montserrat_bold"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="@color/text_h"
-        android:textSize="70sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+    android:background="@color/st_bar"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button_play"
@@ -30,25 +14,40 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/button_play"
         android:textColor="@color/text_h"
-        android:textSize="50sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.081" />
 
     <Button
         android:id="@+id/button_exit"
         android:layout_width="224sp"
         android:layout_height="125sp"
-        android:textSize="50sp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/button_exit"
         android:textColor="@color/text_h"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_play"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.221" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411sp"
+        android:layout_height="367sp"
+        android:layout_marginBottom="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

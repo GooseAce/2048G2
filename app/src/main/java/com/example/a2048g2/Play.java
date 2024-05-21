@@ -17,6 +17,7 @@ import androidx.core.view.GestureDetectorCompat;
 import androidx.fragment.app.FragmentTransaction;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -28,26 +29,46 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
     protected MediaPlayer win_player;
     protected MediaPlayer lose_player;
     protected Button button_go_menu;
+    // Метод для подсчёта суммы очков
+    protected int sum_table(){
+        int sum = 0;
+        for (int i = 0; i < this.table.length; i++){
+            for(int j = 0; j < this.table[i].length; j++){
+                sum += this.table[i][j];
+            }
+        }
+        return sum;
+    }
+
+    // Метод изменения для счёта
+    protected void changing_the_score(){
+        TextView score = findViewById(R.id.score);
+        score.setText("Score: " + String.valueOf(sum_table()));
+    }
+
     // Метод для воиспроизведения звука свайпов
-    protected void swipe_playback(){
+    protected void swipe_playback() {
         swipe_player.start();
     }
+
     // Метод для воиспроизведения звука победы
-    protected void win_playback(){
+    protected void win_playback() {
         win_player.start();
     }
+
     // Метод для воиспроизведения звука поражения
-    protected void lose_playback(){
+    protected void lose_playback() {
         lose_player.start();
     }
 
-    protected void setLoseFragment(){
+    protected void setLoseFragment() {
         Lose lose = new Lose();
         FragmentTransaction ftl = getSupportFragmentManager().beginTransaction();
         ftl.replace(R.id.frame_layout, lose);
         ftl.commit();
     }
-    protected void setWinFragment(){
+
+    protected void setWinFragment() {
         Win win = new Win();
         FragmentTransaction ftw = getSupportFragmentManager().beginTransaction();
         ftw.replace(R.id.frame_layout, win);
@@ -56,8 +77,8 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
 
     // Проверка таблицы на наличие пустых ячеек
     protected boolean hasEmptyCells() {
-        for(int i = 0; i < this.table.length; i++) {
-            for(int j = 0; j < this.table[i].length; j++) {
+        for (int i = 0; i < this.table.length; i++) {
+            for (int j = 0; j < this.table[i].length; j++) {
                 if (this.table[i][j] == 0) {
                     return true; // Найдена пустая ячейка
                 }
@@ -65,10 +86,11 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         }
         return false; // В таблице нет пустых ячеек
     }
+
     // Проверка на выигрыш
     protected boolean hasWin2048() {
-        for(int i = 0; i < this.table.length; i++) {
-            for(int j = 0; j < this.table[i].length; j++) {
+        for (int i = 0; i < this.table.length; i++) {
+            for (int j = 0; j < this.table[i].length; j++) {
                 if (this.table[i][j] == 2048) {
                     return true;
                 }
@@ -76,9 +98,10 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         }
         return false;
     }
+
     // Проверка на проигрыш
     protected boolean hasLost2048() {
-        if(hasEmptyCells()) return false;
+        if (hasEmptyCells()) return false;
         // Проверяем, есть ли возможность создать пары одинаковых значений
         for (int i = 0; i < this.table.length; i++) {
             for (int j = 0; j < this.table[i].length; j++) {
@@ -94,8 +117,9 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         // Если вы дошли до этой точки, значит, на поле нет места для новых плиток и нет возможности создать пары одинаковых значений
         return true; // Игрок проиграл
     }
+
     // Метод для того, чтобы вывести таблицу на активность
-    protected void populateTable(int[][] array){
+    protected void populateTable(int[][] array) {
         TextView textView0_0 = findViewById(R.id.textView0_0);
         TextView textView0_1 = findViewById(R.id.textView0_1);
         TextView textView0_2 = findViewById(R.id.textView0_2);
@@ -112,39 +136,40 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         TextView textView3_1 = findViewById(R.id.textView3_1);
         TextView textView3_2 = findViewById(R.id.textView3_2);
         TextView textView3_3 = findViewById(R.id.textView3_3);
-        if(array[0][0] != 0) textView0_0.setText(String.valueOf(array[0][0]));
+        if (array[0][0] != 0) textView0_0.setText(String.valueOf(array[0][0]));
         else textView0_0.setText("");
-        if(array[0][1] != 0) textView0_1.setText(String.valueOf(array[0][1]));
+        if (array[0][1] != 0) textView0_1.setText(String.valueOf(array[0][1]));
         else textView0_1.setText("");
-        if(array[0][2] != 0) textView0_2.setText(String.valueOf(array[0][2]));
+        if (array[0][2] != 0) textView0_2.setText(String.valueOf(array[0][2]));
         else textView0_2.setText("");
-        if(array[0][3] != 0) textView0_3.setText(String.valueOf(array[0][3]));
+        if (array[0][3] != 0) textView0_3.setText(String.valueOf(array[0][3]));
         else textView0_3.setText("");
-        if(array[1][0] != 0) textView1_0.setText(String.valueOf(array[1][0]));
+        if (array[1][0] != 0) textView1_0.setText(String.valueOf(array[1][0]));
         else textView1_0.setText("");
-        if(array[1][1] != 0) textView1_1.setText(String.valueOf(array[1][1]));
+        if (array[1][1] != 0) textView1_1.setText(String.valueOf(array[1][1]));
         else textView1_1.setText("");
-        if(array[1][2] != 0) textView1_2.setText(String.valueOf(array[1][2]));
+        if (array[1][2] != 0) textView1_2.setText(String.valueOf(array[1][2]));
         else textView1_2.setText("");
-        if(array[1][3] != 0) textView1_3.setText(String.valueOf(array[1][3]));
+        if (array[1][3] != 0) textView1_3.setText(String.valueOf(array[1][3]));
         else textView1_3.setText("");
-        if(array[2][0] != 0) textView2_0.setText(String.valueOf(array[2][0]));
+        if (array[2][0] != 0) textView2_0.setText(String.valueOf(array[2][0]));
         else textView2_0.setText("");
-        if(array[2][1] != 0) textView2_1.setText(String.valueOf(array[2][1]));
+        if (array[2][1] != 0) textView2_1.setText(String.valueOf(array[2][1]));
         else textView2_1.setText("");
-        if(array[2][2] != 0) textView2_2.setText(String.valueOf(array[2][2]));
+        if (array[2][2] != 0) textView2_2.setText(String.valueOf(array[2][2]));
         else textView2_2.setText("");
-        if(array[2][3] != 0) textView2_3.setText(String.valueOf(array[2][3]));
+        if (array[2][3] != 0) textView2_3.setText(String.valueOf(array[2][3]));
         else textView2_3.setText("");
-        if(array[3][0] != 0) textView3_0.setText(String.valueOf(array[3][0]));
+        if (array[3][0] != 0) textView3_0.setText(String.valueOf(array[3][0]));
         else textView3_0.setText("");
-        if(array[3][1] != 0) textView3_1.setText(String.valueOf(array[3][1]));
+        if (array[3][1] != 0) textView3_1.setText(String.valueOf(array[3][1]));
         else textView3_1.setText("");
-        if(array[3][2] != 0) textView3_2.setText(String.valueOf(array[3][2]));
+        if (array[3][2] != 0) textView3_2.setText(String.valueOf(array[3][2]));
         else textView3_2.setText("");
-        if(array[3][3] != 0) textView3_3.setText(String.valueOf(array[3][3]));
+        if (array[3][3] != 0) textView3_3.setText(String.valueOf(array[3][3]));
         else textView3_3.setText("");
     }
+
     // Метод для того, чтобы в случайном месте ставилась 2
     protected void random_location() {
         if (hasEmptyCells()) {
@@ -165,10 +190,11 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
             this.table[randomRow][randomCol] = 2;
         }
     }
+
     // Метод для того, чтобы менять таблицу при свайпе вверх
-    protected void onSwipeUp(){
-        for(int i = 0; i < this.table.length; i++) {
-            for(int j = 1; j < this.table[i].length; j++) {
+    protected void onSwipeUp() {
+        for (int i = 0; i < this.table.length; i++) {
+            for (int j = 1; j < this.table[i].length; j++) {
                 if (this.table[j][i] == 0) {
                     // Пропускаем пустые ячейки
                     continue;
@@ -184,10 +210,11 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
             }
         }
     }
+
     // Метод для того, чтобы менять таблицу при свайпе вниз
-    protected void onSwipeDown(){
-        for(int i = 0; i < this.table.length; i++) {
-            for(int j = this.table[i].length - 2; j >= 0; j--) {
+    protected void onSwipeDown() {
+        for (int i = 0; i < this.table.length; i++) {
+            for (int j = this.table[i].length - 2; j >= 0; j--) {
                 if (this.table[j][i] == 0) {
                     // Пропускаем пустые ячейки
                     continue;
@@ -203,6 +230,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
             }
         }
     }
+
     // Метод для того, чтобы менять таблицу при свайпе вправо
     protected void onSwipeRight() {
         for (int i = 0; i < this.table.length; i++) {
@@ -222,6 +250,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
             }
         }
     }
+
     // Метод для того, чтобы менять таблицу при свайпе влево
     protected void onSwipeLeft() {
         for (int i = 0; i < this.table.length; i++) {
@@ -249,6 +278,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         table = new int[4][4];
         random_location();
         random_location();
+        changing_the_score();
         populateTable(table);
         gd = new GestureDetectorCompat(this, this);
         button_go_menu = findViewById(R.id.button_go_menu);
@@ -269,6 +299,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         gd.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
+
     public boolean onDown(@NonNull MotionEvent e) {
         return false;
     }
@@ -295,33 +326,42 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
 
     @Override
     public boolean onFling(@Nullable MotionEvent e1, @NonNull MotionEvent e2, float velocityX, float velocityY) {
-        if (Math.abs(velocityX) > Math.abs(velocityY)) {
-            if (velocityX > 0) {
-                // Свайп вправо
-                onSwipeRight();
-            } else {
-                // Свайп влево
-                onSwipeLeft();
-            }
-        } else {
-            if (velocityY > 0) {
-                // Свайп вниз
-                onSwipeDown();
-            } else {
-                // Свайп вверх
-                onSwipeUp();
-            }
+        if (hasLost2048()) {
+            setLoseFragment();
+            lose_playback();
         }
-        random_location();
-        populateTable(this.table);
-        swipe_playback();
-        if(hasWin2048()){
+        else if(hasWin2048()) {
             setWinFragment();
             win_playback();
         }
-        if(hasLost2048()){
-            setLoseFragment();
-            lose_playback();
+        else {
+            int[][] copied_table = new int[this.table.length][];
+            for (int i = 0; i < this.table.length; i++) {
+                copied_table[i] = this.table[i].clone();
+            }
+            if (Math.abs(velocityX) > Math.abs(velocityY)) {
+                if (velocityX > 0) {
+                    // Свайп вправо
+                    onSwipeRight();
+                } else {
+                    // Свайп влево
+                    onSwipeLeft();
+                }
+            } else {
+                if (velocityY > 0) {
+                    // Свайп вниз
+                    onSwipeDown();
+                } else {
+                    // Свайп вверх
+                    onSwipeUp();
+                }
+            }
+            if (!Arrays.deepEquals(copied_table, this.table)) {
+                random_location();
+                populateTable(this.table);
+                changing_the_score();
+                swipe_playback();
+            }
         }
         return true;
     }

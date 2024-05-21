@@ -3,7 +3,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="st_bar">#f0b94a</color>
-    <color name="text_h">#967111</color>
+    <color name="st_bar">#aebee8</color>
+    <color name="text_h">#536fb8</color>
     <color name="row">#cfa948</color>
+    <color name="bg_table">#73706a</color>
+    <color name="cells">#c4c2bb</color>
 </resources>

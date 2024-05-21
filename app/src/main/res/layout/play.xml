@@ -7,10 +7,12 @@
     android:background="@color/st_bar">
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="400sp"
         android:layout_height="400sp"
         android:layout_marginTop="232sp"
         android:layout_marginBottom="148sp"
+        android:background="@color/bg_table"
         app:layout_constraintBottom_toTopOf="@+id/button_go_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,55 +27,55 @@
                 android:id="@+id/textView0_0"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView0_1"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView0_2"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView0_3"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
         </TableRow>
 
@@ -84,57 +86,57 @@
 
             <TextView
                 android:id="@+id/textView1_0"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView1_1"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView1_2"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView1_3"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
         </TableRow>
 
@@ -147,55 +149,55 @@
                 android:id="@+id/textView2_0"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-                android:background="@color/text_h"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView2_1"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView2_2"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView2_3"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
         </TableRow>
 
@@ -206,84 +208,100 @@
 
             <TextView
                 android:id="@+id/textView3_0"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView3_1"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView3_2"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <View
                 android:layout_width="10sp"
                 android:layout_height="match_parent"
-                android:background="@color/st_bar" />
+                android:background="@color/bg_table" />
 
             <TextView
                 android:id="@+id/textView3_3"
-                android:background="@color/text_h"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
+                android:background="@color/cells"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
         </TableRow>
     </TableLayout>
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="412dp"
-        android:layout_height="164dp"
+        android:layout_width="411sp"
+        android:layout_height="102sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"></FrameLayout>
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
 
     <Button
         android:id="@+id/button_go_menu"
-        android:layout_width="208dp"
-        android:layout_height="78dp"
+        android:layout_width="268sp"
+        android:layout_height="108sp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/go_menu"
         android:textColor="@color/text_h"
-        android:textSize="25sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="310sp"
+        android:layout_height="71dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:textColor="@color/text_h"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_layout"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
