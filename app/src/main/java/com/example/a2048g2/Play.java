@@ -29,11 +29,12 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
     protected MediaPlayer win_player;
     protected MediaPlayer lose_player;
     protected Button button_go_menu;
+
     // Метод для подсчёта суммы очков
-    protected int sum_table(){
+    protected int sum_table() {
         int sum = 0;
-        for (int i = 0; i < this.table.length; i++){
-            for(int j = 0; j < this.table[i].length; j++){
+        for (int i = 0; i < this.table.length; i++) {
+            for (int j = 0; j < this.table[i].length; j++) {
                 sum += this.table[i][j];
             }
         }
@@ -41,7 +42,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
     }
 
     // Метод изменения для счёта
-    protected void changing_the_score(){
+    protected void changing_the_score() {
         TextView score = findViewById(R.id.score);
         score.setText("Score: " + String.valueOf(sum_table()));
     }
@@ -329,12 +330,10 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         if (hasLost2048()) {
             setLoseFragment();
             lose_playback();
-        }
-        else if(hasWin2048()) {
+        } else if (hasWin2048()) {
             setWinFragment();
             win_playback();
-        }
-        else {
+        } else {
             int[][] copied_table = new int[this.table.length][];
             for (int i = 0; i < this.table.length; i++) {
                 copied_table[i] = this.table[i].clone();
@@ -361,6 +360,13 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
                 populateTable(this.table);
                 changing_the_score();
                 swipe_playback();
+                if (hasLost2048()) {
+                    setLoseFragment();
+                    lose_playback();
+                } else if (hasWin2048()) {
+                    setWinFragment();
+                    win_playback();
+                }
             }
         }
         return true;
