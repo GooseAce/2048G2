@@ -24,10 +24,15 @@ import java.util.Random;
 public class Play extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // Таблица
     protected int[][] table;
+    // Поле для работы со свайпами
     protected GestureDetectorCompat gd;
+    // Поле для звука свайпов
     protected MediaPlayer swipe_player;
+    // Поле для звука выигрыша
     protected MediaPlayer win_player;
+    // Поле для звука поражения
     protected MediaPlayer lose_player;
+    // Поле для кнопки "в меню"
     protected Button button_go_menu;
 
     // Метод для подсчёта суммы очков
