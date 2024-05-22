@@ -176,8 +176,9 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
         else textView3_3.setText("");
     }
 
-    // Метод для того, чтобы в случайном месте ставилась 2
+    // Метод для того, чтобы в случайном месте ставилась 2 или 4
     protected void random_location() {
+        int [] random_number = {2, 2, 2, 2, 2, 2, 2, 4};
         if (hasEmptyCells()) {
             List<int[]> emptyCells = new ArrayList<>();
             // Находим все незаполненные ячейки и добавляем их в список
@@ -193,7 +194,7 @@ public class Play extends AppCompatActivity implements GestureDetector.OnGesture
             int[] randomCellIndices = emptyCells.get(random.nextInt(emptyCells.size()));
             int randomRow = randomCellIndices[0];
             int randomCol = randomCellIndices[1];
-            this.table[randomRow][randomCol] = 2;
+            this.table[randomRow][randomCol] = random_number[random.nextInt(random_number.length)];
         }
     }
 
